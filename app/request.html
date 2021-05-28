@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hyundai</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+  <header class="header-two">
+    <div class="container">
+      <a href="#" class="btn btn-prev">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#arrow-left"></use>
+        </svg>
+
+        <span class="btn-text">Назад</span>
+      </a>
+
+      <h3>Заявка на
+        кузовной ремонт</h3>
+    </div>
+  </header>
+
+  <div class="add-auto wrapper-content">
+    <div class="container">
+      <form method="post" class="form form-add">
+        <label><input type="text" placeholder="Марка" name="mark"></label>
+        <label><input type="text" placeholder="Модель" name="model"></label>
+        <label><input type="text" placeholder="Год" name="year" required></label>
+        <label><input type="text" placeholder="VIN" name="vin" required></label>
+        <label><input type="text" placeholder="Номер телефона" name="phone" required></label>
+        <label class="label-file label-file-photo">
+          <input type="file" class="input-file">
+          <span class="label-file-icon"></span>
+          <span class="label-file-text">Загрузить фото</span>
+        </label>
+        <button type="submit" class="btn btn-accent">Оценить ремонт</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <a href="#" class="links-menu"><svg class="svg-icon"><use xlink:href="img/sprite.svg#house"></use></svg></a>
+      <a href="#" class="links-menu"><svg class="svg-icon"><use xlink:href="img/sprite.svg#user"></use></svg></a>
+      <a href="#" class="links-menu"><svg class="svg-icon"><use xlink:href="img/sprite.svg#message"></use></svg></a>
+
+      <a href="#" class="btn-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+  </footer>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
