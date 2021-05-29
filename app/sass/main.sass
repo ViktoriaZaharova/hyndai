@@ -13,29 +13,6 @@
     -moz-box-sizing: border-box
     box-sizing: border-box
 
-//*::-webkit-input-placeholder
-//  color: #666
-//  opacity: 1
-//
-//*:-moz-placeholder
-//  color: #666
-//  opacity: 1
-//
-//*::-moz-placeholder
-//  color: #666
-//  opacity: 1
-//
-//*:-ms-input-placeholder
-//  color: #666
-//  opacity: 1
-//
-//body input:focus:required:invalid,
-//body textarea:focus:required:invalid
-//  color: #666
-//
-//body input:required:valid,
-//body textarea:required:valid
-//  color: #666
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
   margin: 0
@@ -69,7 +46,6 @@ body
   position: relative
   line-height: normal
   font-family: $default-font
-  line-height: normal
 
 html, body
   overflow-x: hidden
@@ -211,8 +187,8 @@ button
 
 
 .wrapper
-  background: url("../img/bg.png") no-repeat center
-    size: cover
+  background: url("../img/bg.png") repeat top center
+    //size: cover
   min-height: 100%
   max-width: 414px
   width: 100%
@@ -423,6 +399,7 @@ header
   width: 100%
   margin: 0 0 40px
   font-size: 14px
+  color: #fff
 
   h3
     margin: 4px 0 8px
