@@ -1117,13 +1117,418 @@ footer {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
 
+.btn-filter {
+  width: 27px;
+  height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  stroke: #fff;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%); }
+
+.auto-in-stock .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.auto-stock-item {
+  max-width: 48%;
+  width: 100%;
+  color: #ffffff;
+  margin: 0 0 24px;
+  font-size: 18px; }
+  .auto-stock-item .price {
+    font-weight: bold; }
+
+.auto-stock-item__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  height: 185px;
+  width: 100%;
+  margin: 0 0 15px;
+  border-radius: 2px; }
+  .auto-stock-item__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.auto-stock-item__title {
+  color: #fff; }
+
+.btn-next {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  margin: 0 0 38px;
+  height: auto;
+  border-radius: 0;
+  font-size: 24px; }
+  .btn-next .svg-icon {
+    fill: none;
+    stroke: #fff;
+    width: 21px;
+    height: 13px; }
+
+.dealers-item {
+  width: 100%;
+  margin: 0 0 30px;
+  font-size: 24px; }
+
+.dealers-item__body {
+  padding: 20px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .dealers-item__body .address {
+    max-width: 212px; }
+
+.phone-dealers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #8D7449;
+  width: 58px;
+  height: 58px;
+  border-radius: 6px;
+  padding: 11px;
+  fill: #fff; }
+  .phone-dealers:hover {
+    background: #8D7449; }
+
+.dealers-map {
+  height: 549px;
+  width: calc(100% + 40px);
+  margin: 0 -20px; }
+  .dealers-map iframe {
+    width: 100%;
+    height: 100%; }
+
+.list-timepicker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -7.5px;
+  width: calc(100% + 15px); }
+  .list-timepicker li {
+    width: 25%;
+    padding: 0 7.5px;
+    margin: 0 0 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+.list-timepicker__links {
+  background: #fff;
+  border-radius: 12px;
+  width: 100%;
+  height: 54px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+  font-weight: 300;
+  color: #8D7449; }
+  .list-timepicker__links:hover {
+    background: #8D7449;
+    color: #fff; }
+
+.list-timepicker__item.disabled .list-timepicker__links {
+  background: #CFC8C2;
+  cursor: initial; }
+  .list-timepicker__item.disabled .list-timepicker__links:hover {
+    color: #8D7449; }
+
+.select {
+  width: 100%;
+  background: #8D7449 url("../img/arrow-right.svg") no-repeat calc(100% - 14px) center;
+    background-size: 10px;
+  color: #fff;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0 14px 0 28px;
+  height: 54px;
+  cursor: pointer; }
+
+.registration-service {
+  width: 100%;
+  margin: 0 0 40px;
+  position: relative; }
+  .registration-service .tabs__caption {
+    border-radius: 14px;
+    background: #fff;
+    padding: 3px;
+    font-size: 24px;
+    font-weight: normal;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .registration-service .tabs__caption li {
+      border: 1px solid #8D7449;
+        border-radius: 12px;
+      max-width: 49%;
+      width: 100%;
+      margin: 0;
+      color: #8D7449;
+      -webkit-box-flex: 1;
+          -ms-flex: auto;
+              flex: auto; }
+      .registration-service .tabs__caption li:before {
+        display: none; }
+    .registration-service .tabs__caption .active {
+      background: #8D7449;
+      color: #fff; }
+
+.ui-widget.ui-widget-content {
+  border: none;
+    border-radius: 0;
+  padding: 0;
+  background: transparent; }
+
+.ui-datepicker {
+  width: 100%;
+  font-family: "Hyndai", sans-serif;
+  font-weight: normal; }
+  .ui-datepicker table {
+    font-size: 24px;
+    margin: 0; }
+  .ui-datepicker th {
+    padding: 13px 0;
+    font-weight: normal;
+    text-transform: lowercase; }
+  .ui-datepicker td {
+    padding: 0; }
+
+.ui-datepicker-calendar {
+  background: #fff;
+  border-radius: 14px; }
+
+.ui-datepicker .ui-datepicker-header {
+  background: transparent;
+  padding: 0;
+  margin: 0 0 15px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+    border-radius: 0; }
+
+.ui-datepicker .ui-datepicker-title {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  font-size: 24px;
+  line-height: normal;
+  font-weight: normal;
+  margin: 0 auto 0 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+  position: relative;
+  right: 0;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0;
+  cursor: pointer; }
+
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+  position: relative;
+  right: 0;
+  top: 0;
+  left: 0;
+  margin: 0; }
+
+.ui-datepicker .ui-datepicker-prev span {
+  background: url("../img/prev.svg") no-repeat center;
+    background-size: 100%; }
+  .ui-datepicker .ui-datepicker-prev span:hover span, .ui-datepicker .ui-datepicker-prev span:focus span {
+    background: url("../img/prev.svg") no-repeat center;
+      background-size: 100%; }
+
+.ui-datepicker .ui-datepicker-prev-hover {
+  background: url("../img/prev.svg") no-repeat center;
+    background-size: 100%;
+  border: none; }
+  .ui-datepicker .ui-datepicker-prev-hover span {
+    background: url("../img/prev.svg") no-repeat center;
+      background-size: 100%; }
+
+.ui-datepicker .ui-datepicker-next span {
+  background: url("../img/next.svg") no-repeat center;
+    background-size: 100%; }
+  .ui-datepicker .ui-datepicker-next span:hover span, .ui-datepicker .ui-datepicker-next span:focus span {
+    background: url("../img/next.svg") no-repeat center;
+      background-size: 100%; }
+
+.ui-datepicker .ui-datepicker-next-hover {
+  background: url("../img/next.svg") no-repeat center;
+    background-size: 100%;
+  border: none; }
+  .ui-datepicker .ui-datepicker-next-hover span {
+    background: url("../img/next.svg") no-repeat center;
+      background-size: 100%; }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  border: none;
+    border-radius: 0;
+  padding: 12px 0;
+  text-align: center;
+  background: transparent;
+  color: #8D7449; }
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  color: #000000; }
+
+.modal-confirmation {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 5;
+  max-width: 373px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 14px;
+  padding: 26px 60px 25px;
+  font-size: 18px;
+  color: #000;
+  text-align: center; }
+  .modal-confirmation .btn-group {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .modal-confirmation .btn-group a {
+      font-size: 24px;
+      color: #000; }
+  .modal-confirmation p {
+    color: #CFC8C2;
+    max-width: 230px;
+    margin: 35px auto; }
+  .modal-confirmation h3 {
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    font-weight: normal;
+    color: #000; }
+
+.btn-save-modal {
+  font-weight: 500; }
+
+.links-doc {
+  margin: 38px auto 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center; }
+
+textarea {
+  height: 213px;
+  padding: 12px 28px;
+  color: #fff; }
+  textarea::-webkit-input-placeholder {
+    color: #fff; }
+  textarea::-moz-placeholder {
+    color: #fff; }
+  textarea::-ms-input-placeholder {
+    color: #fff; }
+  textarea::placeholder {
+    color: #fff; }
+
+.callback form .btn {
+  font-weight: normal; }
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px) {
   h3 {
     font-size: 22px; }
   .header-two h3 {
     max-width: 150px; }
-  input, .form, .btn, .label-file, .menu {
+  input, .form, .btn, .label-file, .menu, textarea, .btn-next, .list-timepicker__links, .select, .registration-service .tabs__caption li, .ui-datepicker table, .ui-datepicker .ui-datepicker-title {
     font-size: 18px; }
   .entrance h1 {
     margin: 0 auto 30px; }
@@ -1144,4 +1549,13 @@ footer {
   header {
     padding: 20px 0; }
   .menu-footer {
-    margin: auto 0 30px; } }
+    margin: auto 0 30px; }
+  .modal-confirmation {
+    padding: 30px;
+    font-size: 18px; }
+    .modal-confirmation .btn-group a {
+      font-size: 18px; }
+    .modal-confirmation p {
+      margin: 20px auto; }
+    .modal-confirmation h3 {
+      font-size: 22px; } }

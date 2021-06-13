@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hyundai</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+  <header class="header-two">
+    <div class="container">
+      <a href="#" class="btn btn-prev">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#arrow-left"></use>
+        </svg>
+
+        <span class="btn-text">Назад</span>
+      </a>
+
+      <h3>Запись <br>
+        на сервис</h3>
+
+      <a href="menu.html" class="btn-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+  </header>
+
+  <div class="registration-for-service wrapper-content">
+    <div class="container">
+      <form method="post" class="registration-service">
+        <div class="modal-confirmation">
+          <h3>Подтведите запись</h3>
+          <p>Нажимая кнопку ОК, вы
+            подтверждаете запись на
+            услуги сервиса</p>
+
+          <div class="btn-group">
+            <a href="#" class="btn-close-modal">Отмена</a>
+            <a href="#" class="btn-save-modal">ОК</a>
+          </div>
+        </div>
+
+        <label>
+          <select name="select" class="select">
+            <option value="Выберите автомобиль">Выберите автомобиль</option>
+            <option value="Выберите автомобиль">Выберите автомобиль</option>
+            <option value="Выберите автомобиль">Выберите автомобиль</option>
+            <option value="Выберите автомобиль">Выберите автомобиль</option>
+            <option value="Выберите автомобиль">Выберите автомобиль</option>
+          </select>
+        </label>
+        <label>
+          <select name="select" class="select">
+            <option value="Выберите услугу сервиса">Выберите услугу сервиса</option>
+            <option value="Выберите услугу сервиса">Выберите услугу сервиса</option>
+            <option value="Выберите услугу сервиса">Выберите услугу сервиса</option>
+            <option value="Выберите услугу сервиса">Выберите услугу сервиса</option>
+          </select>
+        </label>
+
+        <div class="tabs w-100">
+          <ul class="tabs__caption">
+            <li class="active">Дата</li>
+            <li>Время</li>
+          </ul>
+
+          <div class="tabs__content active">
+            <div id="datepicker" class="datepicker-item"></div>
+          </div>
+
+          <div class="tabs__content">
+            <ul class="list-timepicker">
+              <li class="list-timepicker__item disabled"><a href="#" class="list-timepicker__links">17:30</a></li>
+              <li class="list-timepicker__item"><a href="#" class="list-timepicker__links">17:30</a></li>
+              <li class="list-timepicker__item"><a href="#" class="list-timepicker__links">17:30</a></li>
+              <li class="list-timepicker__item disabled"><a href="#" class="list-timepicker__links">17:30</a></li>
+              <li class="list-timepicker__item"><a href="#" class="list-timepicker__links">17:30</a></li>
+              <li class="list-timepicker__item"><a href="#" class="list-timepicker__links">17:30</a></li>
+              <li class="list-timepicker__item disabled"><a href="#" class="list-timepicker__links">17:30</a></li>
+              <li class="list-timepicker__item disabled"><a href="#" class="list-timepicker__links">17:30</a></li>
+              <li class="list-timepicker__item"><a href="#" class="list-timepicker__links">17:30</a></li>
+              <li class="list-timepicker__item disabled"><a href="#" class="list-timepicker__links">17:30</a></li>
+              <li class="list-timepicker__item disabled"><a href="#" class="list-timepicker__links">17:30</a></li>
+              <li class="list-timepicker__item"><a href="#" class="list-timepicker__links">17:30</a></li>
+              <li class="list-timepicker__item"><a href="#" class="list-timepicker__links">17:30</a></li>
+              <li class="list-timepicker__item"><a href="#" class="list-timepicker__links">17:30</a></li>
+              <li class="list-timepicker__item"><a href="#" class="list-timepicker__links">17:30</a></li>
+              <li class="list-timepicker__item"><a href="#" class="list-timepicker__links">17:30</a></li>
+            </ul>
+          </div>
+
+          <button type="submit" class="btn btn-accent">Записаться</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <a href="#" class="links-menu">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#house"></use>
+        </svg>
+      </a>
+      <a href="#" class="links-menu">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#user"></use>
+        </svg>
+      </a>
+      <a href="#" class="links-menu">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#message"></use>
+        </svg>
+      </a>
+
+      <a href="#" class="btn-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+  </footer>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
