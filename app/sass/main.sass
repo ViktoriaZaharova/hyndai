@@ -1110,6 +1110,7 @@ footer
   width: 100%
   margin: 0 0 40px
   position: relative
+
   .tabs__caption
     border-radius: 14px
     background: #fff
@@ -1148,10 +1149,12 @@ footer
   table
     font-size: 24px
     margin: 0
+
   th
     padding: 13px 0
     font-weight: normal
     text-transform: lowercase
+
   td
     padding: 0
 
@@ -1200,6 +1203,7 @@ footer
 .ui-datepicker .ui-datepicker-prev span
   background: url("../img/prev.svg") no-repeat center
     size: 100%
+
   &:hover, &:focus
     span
       background: url("../img/prev.svg") no-repeat center
@@ -1209,6 +1213,7 @@ footer
   background: url("../img/prev.svg") no-repeat center
     size: 100%
   border: none
+
   span
     background: url("../img/prev.svg") no-repeat center
       size: 100%
@@ -1216,6 +1221,7 @@ footer
 .ui-datepicker .ui-datepicker-next span
   background: url("../img/next.svg") no-repeat center
     size: 100%
+
   &:hover, &:focus
     span
       background: url("../img/next.svg") no-repeat center
@@ -1225,6 +1231,7 @@ footer
   background: url("../img/next.svg") no-repeat center
     size: 100%
   border: none
+
   span
     background: url("../img/next.svg") no-repeat center
       size: 100%
@@ -1244,7 +1251,7 @@ footer
   position: fixed
   left: 50%
   top: 50%
-  transform: translate(-50%,-50%)
+  transform: translate(-50%, -50%)
   z-index: 5
   max-width: 373px
   width: 100%
@@ -1254,19 +1261,23 @@ footer
   font-size: 18px
   color: #000
   text-align: center
+
   .btn-group
     width: 100%
     display: flex
     align-items: center
     justify-content: space-between
     flex-wrap: wrap
+
     a
       font-size: 24px
       color: #000
+
   p
     color: #CFC8C2
     max-width: 230px
     margin: 35px auto
+
   h3
     text-align: center
     width: 100%
@@ -1288,6 +1299,7 @@ textarea
   height: 213px
   padding: 12px 28px
   color: #fff
+
   &::placeholder
     color: #fff
 
@@ -1296,6 +1308,299 @@ textarea
     .btn
       font-weight: normal
 
+//payment
+.wrapper-bg-white
+  background: #fff
+  color: #000
+
+  .header-two
+    color: #8D7449
+
+    .btn-prev
+      color: #CFC8C2
+
+    .svg-icon
+      stroke: #CFC8C2
+
+  .btn-burger
+    span
+      background: #000000
+
+.form-payment
+  h3
+    color: #000
+    margin: 0 auto 23px
+    text-align: center
+    font-size: 18px
+    font-weight: 500
+
+  input
+    color: #000
+
+    &::placeholder
+      color: #CFC8C2
+
+.form-payment-item
+  margin: 0 0 40px
+
+  &:last-child
+    margin: 0
+
+.form-group
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+  label
+    max-width: 48.5%
+
+.qr-code
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 18px auto 0
+
+.form-chat
+  width: 100%
+  max-width: 414px
+  transform: translate(-50%, 0)
+  display: flex
+  align-items: center
+  background: #fff
+  margin: 0
+  position: fixed
+  bottom: 70px
+  left: 50%
+  z-index: 3
+  padding: 15px 20px
+  justify-content: space-between
+
+  .label-form
+    width: calc(100% - 60px)
+
+  .btn
+    width: 45px
+    height: 46px
+    position: absolute
+    right: 20px
+    top: 15px
+    padding: 12px
+    margin: 0
+
+  input
+    height: 46px
+    color: #000
+    padding: 0 45px 0 12px
+    border: 1px solid #CFC8C2
+      radius: 16px
+
+    &::placeholder
+      color: #CFC8C2
+      font-size: 18px
+
+  label
+    margin: 0
+
+  .label-file
+    width: fit-content
+
+  .label-file-icon
+    width: 45px
+    height: 46px
+    min-width: 45px
+    background: #CFC8C2
+
+    &:before
+      width: 22px
+
+    &:after
+      height: 22px
+
+
+.btn-blue
+  stroke: #fff
+  fill: none
+  background: #00AFD5
+
+  &:hover
+    background: $accent
+
+.wrapper-chat
+  padding: 0 0 145px
+
+.chat-section
+  background: url("../img/bg.png") repeat top center
+  width: 100%
+  padding: 30px 0
+
+.chat-box
+  margin: 0 0 32px
+  width: 100%
+
+.chat-box-date
+  margin: 0 0 19px
+  width: 100%
+  text-align: center
+  color: #CFC8C2
+  font-size: 14px
+  font-weight: 300
+
+.dialogue
+  width: 100%
+  display: flex
+  align-items: flex-start
+  margin: 0 0 47px
+
+  &:last-child
+    margin: 0
+
+  .photo
+    border-radius: 50%
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 27px 0 0
+    width: 55px
+    height: 55px
+    min-width: 55px
+
+.dialogue-text
+  background: #fff
+  position: relative
+  padding: 13px 18px
+  font-size: 18px
+  font-weight: 300
+  color: #000
+
+  &:before
+    content: ''
+    position: absolute
+    top: 15px
+    left: -7px
+    border-right: 7px solid #fff
+    border-top: 9px solid transparent
+    border-bottom: 9px solid transparent
+
+.dialogue-answer
+  flex-direction: row-reverse
+
+  .photo
+    margin: 0 0 0 20px
+
+  .dialogue-text
+    text-align: right
+
+    &:before
+      left: auto
+      right: -7px
+      transform: scale(-1, 1)
+
+.subscribe
+  text-align: center
+  font-size: 24px
+  font-weight: 300
+  width: 100%
+  margin: 120px 0 0
+  h3
+    font-size: 24px
+    font-weight: 300
+
+.list-social
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 18px 0 0
+  li
+    margin: 0 37px 0 0
+    &:last-child
+      margin: 0
+    a
+      fill: #fff
+      width: 40px
+      height: 40px
+      &:hover
+        fill: $accent
+
+.cabinet-page
+  padding: 0 0 65px
+  .characteristics-box
+    h3
+      margin: 0 0 22px
+      color: #8D7449
+  .list-characteristics
+    margin: 0 0 40px
+    li
+      border: none
+      padding: 4px 0
+    span
+      opacity: .53
+  .label-file
+    margin: 0 auto 35px
+    justify-content: center
+    font-size: 18px
+  .label-file-icon
+    width: 35px
+    height: 35px
+    min-width: 35px
+    border-radius: 10px
+    &:before
+      width: 19px
+    &:after
+      height: 19px
+
+.user-box
+  text-align: center
+  margin: 0 auto 20px
+  &__photo
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    overflow: hidden
+    margin: 0 auto 14px
+    width: 77px
+    height: 77px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__title
+    font-size: 24px
+    font-weight: bold
+
+.cabinet-slider-item__photo
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+.cabinet-slider-item__title
+  margin: 7px auto 37px
+  font-weight: bold
+  font-size: 36px
+  text-transform: uppercase
+  text-align: center
+
+.slick-arrow
+  position: absolute
+  z-index: 2
+  opacity: 1
+  background: transparent
+  top: 65px
+  stroke: #fff
+  width: 20px
+  height: 36px
+  fill: none
+  &:hover
+    stroke: $accent
+
+.slick-prev
+  left: 0
+
+.slick-next
+  right: 0
 
 @import "media"
 // Всегда в конце
